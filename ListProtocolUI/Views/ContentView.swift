@@ -7,10 +7,28 @@
 
 import SwiftUI
 
-var gMyFruits = Fruits()
+// Initial list to display.
+let gFruits: [EditableRow] = [
+    EditableRow(name: "Apple"         , image: "🍎"   , isSelected: true),
+    EditableRow(name: "Banana"        , image: "🍌"),
+    EditableRow(name: "Orange"        , image: "🍊"),
+    EditableRow(name: "Strawberry"    , image: "🍓"),
+    EditableRow(name: "Blueberry"     , image: "🫐"),
+]
+
+// Initial list to display.
+let gDesserts: [EditableRow] = [
+    EditableRow(name: "Apple Strudel"       , image: "🍎"),
+    EditableRow(name: "Banana Pie"          , image: "🍌"),
+    EditableRow(name: "Orange Jello"        , image: "🍊"),
+    EditableRow(name: "Strawberry Custard"  , image: "🍓"   , isSelected: true),
+    EditableRow(name: "Blueberry Crumble"   , image: "🫐"),
+]
 
 struct ContentView: View {
-    @State var myFruits = gMyFruits
+    @State private var fruits = EditableList(rows: gFruits)
+    @State private var desserts = EditableList(rows: gDesserts)
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,10 +38,17 @@ struct ContentView: View {
         }
         .padding()
         
-        EditableListView(model: $myFruits, selectedItem: Fruit(name: "", image: ""))
+        EditableListView(heading1: "Available fruits", heading2: "Select a fruit", selectedItem: fruits.selectedRow)
+            .environment(fruits)
+            .padding()
+        
+        EditableListView(heading1: "Available desserts", heading2: "Select a dessert:", selectedItem: desserts.selectedRow)
+            .environment(desserts)
+            .padding()
     }
 }
 
-#Preview {
+#Preview(traits: .sizeThatFitsLayout) {
+    @Previewable @State var fruits = EditableList(rows: gFruits)
     ContentView()
 }

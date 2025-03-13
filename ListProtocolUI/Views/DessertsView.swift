@@ -1,5 +1,5 @@
 //
-//  FruitView.swift
+//  DessertsView.swift
 //  ListProtocolUI
 //
 //  Created by Phil Kelly on 3/12/25.
@@ -14,8 +14,8 @@ import SwiftUI
 /**
  Display and provide user interations for the list.
  */
-struct FruitView: View {
-    @Environment(EditableList.self) private var fruits
+struct DessertsView: View {
+    @Environment(EditableList.self) private var desserts
     
     @State var heading1: String
     @State var heading2: String
@@ -23,15 +23,13 @@ struct FruitView: View {
 
     var body: some View {
         VStack(alignment:.leading) {
-            EditableListProtocolView(heading1: heading1, heading2: heading2, selectedItem: selectedItem)
+            EditableListView(heading1: heading1, heading2: heading2, selectedItem: selectedItem)
         }
     }
 }
 
 #Preview(traits: .sizeThatFitsLayout) {
-    @Previewable @State var fruits = EditableList(rows: gFruits)
-    @Previewable @State var heading1 = "Available EditableList"
-    @Previewable @State var heading2 = "Select an EditableRow:"
-    FruitView(heading1: "Available fruits", heading2: "Select a fruit:", selectedItem: fruits.selectedRow)
-        .environment(fruits)
+    @Previewable @State var desserts = EditableList(rows: gDesserts)
+    FruitView(heading1: "Available desserts", heading2: "Select a dessert:", selectedItem: desserts.selectedRow)
+        .environment(desserts)
 }

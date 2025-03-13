@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+
 @main
 struct ListProtocolUIApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

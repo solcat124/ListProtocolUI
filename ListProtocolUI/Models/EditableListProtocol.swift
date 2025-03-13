@@ -10,16 +10,8 @@ import Foundation
 
 // MARK: - Protocol
 
-protocol EditableRow: Identifiable, Hashable {
-    var id: UUID { get }
-    var name: String { get set }
-    var image: String { get set }
-    
-    mutating func renameRow(to name: String)
-}
-
-protocol EditableList {
-    associatedtype RowModel: EditableRow
+protocol EditableListProtocol {
+    associatedtype RowModel: EditableRowProtocol
     
     var rows: [RowModel] { get set }
     

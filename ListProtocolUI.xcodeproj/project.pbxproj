@@ -6,6 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4A4395192D8340A400E5EA47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A43950F2D8340A400E5EA47 /* Preview Assets.xcassets */; };
+		4A43951A2D8340A400E5EA47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4395142D8340A400E5EA47 /* Assets.xcassets */; };
+		4A43951B2D8340A400E5EA47 /* EditableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A43950D2D8340A400E5EA47 /* EditableList.swift */; };
+		4A43951C2D8340A400E5EA47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4395112D8340A400E5EA47 /* ContentView.swift */; };
+		4A43951E2D8340A400E5EA47 /* EditableListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4395152D8340A400E5EA47 /* EditableListProtocol.swift */; };
+		4A43951F2D8340A400E5EA47 /* ListProtocolUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4395172D8340A400E5EA47 /* ListProtocolUIApp.swift */; };
+		4AB57C622D835C65004E1301 /* EditableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB57C612D835C65004E1301 /* EditableRow.swift */; };
+		4AE6AE0A2D83647C00C1EBDF /* EditableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE6AE092D83647C00C1EBDF /* EditableRowView.swift */; };
+		4AE6AE102D836E0500C1EBDF /* EditableListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE6AE0F2D836E0500C1EBDF /* EditableListView.swift */; };
+		4AE6AE122D83708D00C1EBDF /* EditableRowProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE6AE112D83708D00C1EBDF /* EditableRowProtocol.swift */; };
+		4AE6AE142D83730E00C1EBDF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4AE6AE132D83730E00C1EBDF /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4A4394BC2D81D5B000E5EA47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +41,21 @@
 		4A4394AA2D81D5AF00E5EA47 /* ListProtocolUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListProtocolUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A4394BB2D81D5B000E5EA47 /* ListProtocolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListProtocolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A4394C52D81D5B000E5EA47 /* ListProtocolUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListProtocolUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A43950D2D8340A400E5EA47 /* EditableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableList.swift; sourceTree = "<group>"; };
+		4A43950F2D8340A400E5EA47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A4395112D8340A400E5EA47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A4395142D8340A400E5EA47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A4395152D8340A400E5EA47 /* EditableListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableListProtocol.swift; sourceTree = "<group>"; };
+		4A4395162D8340A400E5EA47 /* ListProtocolUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ListProtocolUI.entitlements; sourceTree = "<group>"; };
+		4A4395172D8340A400E5EA47 /* ListProtocolUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocolUIApp.swift; sourceTree = "<group>"; };
+		4AB57C612D835C65004E1301 /* EditableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableRow.swift; sourceTree = "<group>"; };
+		4AE6AE092D83647C00C1EBDF /* EditableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableRowView.swift; sourceTree = "<group>"; };
+		4AE6AE0F2D836E0500C1EBDF /* EditableListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableListView.swift; sourceTree = "<group>"; };
+		4AE6AE112D83708D00C1EBDF /* EditableRowProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableRowProtocol.swift; sourceTree = "<group>"; };
+		4AE6AE132D83730E00C1EBDF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4A4394AC2D81D5AF00E5EA47 /* ListProtocolUI */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ListProtocolUI;
-			sourceTree = "<group>";
-		};
 		4A4394BE2D81D5B000E5EA47 /* ListProtocolUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ListProtocolUITests;
@@ -75,7 +96,8 @@
 		4A4394A12D81D5AF00E5EA47 = {
 			isa = PBXGroup;
 			children = (
-				4A4394AC2D81D5AF00E5EA47 /* ListProtocolUI */,
+				4AE6AE132D83730E00C1EBDF /* README.md */,
+				4A4395182D8340A400E5EA47 /* ListProtocolUI */,
 				4A4394BE2D81D5B000E5EA47 /* ListProtocolUITests */,
 				4A4394C82D81D5B000E5EA47 /* ListProtocolUIUITests */,
 				4A4394AB2D81D5AF00E5EA47 /* Products */,
@@ -92,6 +114,48 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4A43950E2D8340A400E5EA47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A4395152D8340A400E5EA47 /* EditableListProtocol.swift */,
+				4AE6AE112D83708D00C1EBDF /* EditableRowProtocol.swift */,
+				4A43950D2D8340A400E5EA47 /* EditableList.swift */,
+				4AB57C612D835C65004E1301 /* EditableRow.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A4395102D8340A400E5EA47 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4A43950F2D8340A400E5EA47 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4A4395132D8340A400E5EA47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A4395112D8340A400E5EA47 /* ContentView.swift */,
+				4AE6AE0F2D836E0500C1EBDF /* EditableListView.swift */,
+				4AE6AE092D83647C00C1EBDF /* EditableRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A4395182D8340A400E5EA47 /* ListProtocolUI */ = {
+			isa = PBXGroup;
+			children = (
+				4A4395172D8340A400E5EA47 /* ListProtocolUIApp.swift */,
+				4A43950E2D8340A400E5EA47 /* Models */,
+				4A4395132D8340A400E5EA47 /* Views */,
+				4A4395142D8340A400E5EA47 /* Assets.xcassets */,
+				4A4395162D8340A400E5EA47 /* ListProtocolUI.entitlements */,
+				4A4395102D8340A400E5EA47 /* Preview Content */,
+			);
+			path = ListProtocolUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +170,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				4A4394AC2D81D5AF00E5EA47 /* ListProtocolUI */,
 			);
 			name = ListProtocolUI;
 			packageProductDependencies = (
@@ -212,6 +273,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE6AE142D83730E00C1EBDF /* README.md in Resources */,
+				4A4395192D8340A400E5EA47 /* Preview Assets.xcassets in Resources */,
+				4A43951A2D8340A400E5EA47 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE6AE102D836E0500C1EBDF /* EditableListView.swift in Sources */,
+				4AE6AE122D83708D00C1EBDF /* EditableRowProtocol.swift in Sources */,
+				4AB57C622D835C65004E1301 /* EditableRow.swift in Sources */,
+				4A43951B2D8340A400E5EA47 /* EditableList.swift in Sources */,
+				4A43951C2D8340A400E5EA47 /* ContentView.swift in Sources */,
+				4AE6AE0A2D83647C00C1EBDF /* EditableRowView.swift in Sources */,
+				4A43951E2D8340A400E5EA47 /* EditableListProtocol.swift in Sources */,
+				4A43951F2D8340A400E5EA47 /* ListProtocolUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

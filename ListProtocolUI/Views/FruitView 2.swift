@@ -23,7 +23,7 @@ struct FruitView: View {
 
     var body: some View {
         VStack(alignment:.leading) {
-            EditableListProtocolView(heading1: heading1, heading2: heading2, selectedItem: selectedItem)
+            EditableListView(heading1: heading1, heading2: heading2, selectedItem: selectedItem)
         }
     }
 }
