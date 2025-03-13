@@ -1,5 +1,5 @@
 //
-//  Fruits.swift
+//  EditableList.swift
 //  ListProtocolUI
 //
 //  Created by Phil Kelly on 3/12/25.
@@ -10,11 +10,11 @@
 import Foundation
 
 
-// MARK: - Fruits
+// MARK: - EditableList
 
-@Observable class Fruits {
-    var rows: [Fruit]
-    var selectedRow: Fruit {
+@Observable class EditableList {
+    var rows: [EditableRow]
+    var selectedRow: EditableRow {
         get {
             if let index = rows.firstIndex(where: { $0.isSelected == true } ) {
                 return rows[index]
@@ -23,26 +23,26 @@ import Foundation
         }
     }
     
-    init(rows: [Fruit]) {
+    init(rows: [EditableRow]) {
         if rows.isEmpty {
-            self.rows = [Fruit(name: "unknown")]
+            self.rows = [EditableRow(name: "unknown")]
         } else {
             self.rows = rows
         }
     }
 }
 
-// MARK: - Fruits, Extension EditableListProtocol
+// MARK: - EditableList, Extension EditableListProtocol
 
-extension Fruits: EditableListProtocol {
-    typealias RowModel = Fruit
+extension EditableList: EditableListProtocol {
+    typealias RowModel = EditableRow
     
     func moveRow(at source: IndexSet, to destination: Int) {
         print("move rows")
         rows.move(fromOffsets: source, toOffset: destination)
     }
     
-    func insertRows(at indices: IndexSet, as newElements: [Fruit]) {
+    func insertRows(at indices: IndexSet, as newElements: [EditableRow]) {
         print("insert rows")
         for (index, element) in zip(indices, newElements) {
             rows.insert(element, at: index)
